@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    {% block head %}
+    <title>BASE</title>
+    {% endblock %}
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	<!-- Font -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="/static/common-css/bootstrap.css">
+	<link href="/static/common-css/ionicons.css" rel="stylesheet">
+	<link rel="stylesheet" href="/static/common-js/jquery.classycountdown.js" />	
+	<link href="/static/css/styles.css" rel="stylesheet">
+	<link href="/static/css/responsive.css" rel="stylesheet"> -->
+
+	<link rel="stylesheet" href="/static/mdl/material.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body background="/static/images/yellow.jpg">
+<!-- <body style="background-image:url(../static/images/white.jpg) center / cover;"> -->
+	
+	<!--div class="main-area-wrapper" style="background-image:url(/static/images/pic6.jpg);">
+		<div class="main-area center-text" >
+			{% block bodys %}
+			<h1>BASE TEMPLATE</h1>
+			{% endblock %}
+		</div--><!-- main-area -->
+	<!--/div--><!-- main-area-wrapper -->
+
+	<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+	/* .demo-layout-transparent {
+	  background: url('../assets/demos/transparent.jpg') center / cover;
+	} */
+	.demo-layout-transparent .mdl-layout__header,
+	.demo-layout-transparent .mdl-layout__drawer-button {
+	  /* This background is dark, so we set text to white. Use 87% black instead if
+		 your background is light. */
+	  color: white;
+	}
+	</style>
+	
+	<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+	  <header class="mdl-layout__header mdl-layout__header--transparent">
+		<div class="mdl-layout__header-row">
+		  <!-- Title -->
+		  <span class="mdl-layout-title">Sybyl Smart Attendance</span>
+		  <!-- Add spacer, to align navigation to the right -->
+		  <div class="mdl-layout-spacer"></div>
+		  <!-- Navigation -->
+		  <nav class="mdl-navigation">
+			<!-- <a class="mdl-navigation__link" href="">Link</a>
+			<a class="mdl-navigation__link" href="">Link</a>
+			<a class="mdl-navigation__link" href="">Link</a> -->
+			<a class="mdl-navigation__link" href="/">Home</a>
+		  </nav>
+		</div>
+	  </header>
+	  <!-- <div class="mdl-layout__drawer">
+		<span class="mdl-layout-title">Title</span>
+		<nav class="mdl-navigation">
+		  <a class="mdl-navigation__link" href="">Link</a>
+		  <a class="mdl-navigation__link" href="">Link</a>
+		  <a class="mdl-navigation__link" href="">Link</a>
+		  <a class="mdl-navigation__link" href="">Link</a>
+		</nav>
+	  </div> -->
+	  <main class="mdl-layout__content">
+		{% block body %}
+		<h1>BASE TEMPLATE</h1>
+		{% endblock %}
+	  </main>
+	</div>
+	
+	<!-- SCIPTS -->
+	
+	<!-- <script src="/static/common-js/jquery-3.1.1.min.js"></script>
+	<script src="/static/common-js/jquery.countdown.min.js"></script>
+	<script src="/static/common-js/scripts.js"></script> -->
+
+
+	<script src="/static/mdl/material.min.js"></script>
+	
+</body>
+</html>

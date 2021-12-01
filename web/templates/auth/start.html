@@ -1,0 +1,35 @@
+{% extends 'starter.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<div class="display-table">
+    <div class="display-table-cell">
+        
+        <h1 class="title"><b>Face Recognition System</b></h1>
+        <p class="desc font-white">A simple login system using face recognition in python</p>
+    
+        <!-- <a class="notify-btn" href="/web/register/"><b>Register</b></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+        <a class="notify-btn" href="/register/">
+            <!-- <b>Register</b> -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Register
+              </button>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <!-- <a class="notify-btn" href="/web/login/"><b>Login</b></a> -->
+        <a class="notify-btn" href="/login/">
+            <!-- <b>Login</b> -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Clock in
+              </button>
+        </a>
+        
+    </div><!-- display-table -->
+</div><!-- display-table-cell -->
+
+{% endblock %}
